@@ -1,0 +1,44 @@
+body{
+    font-family: verdana;
+}*{
+    margin:0;
+    padding:0;
+}
+.logo img{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+header,footer{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    color:white;
+}
+header h3{
+    position: absolute;
+    margin-top: 26px;
+    left: 6%;
+}
+header h4{
+    position: absolute;
+    margin-top: 20px;
+    left: 89%;
+}
+header h4{
+    position: absolute;
+    margin-top: 20px;
+    left: 94%;
+}
+header{
+    height: 12vh;
+}
+footer{
+    height: 9vh;
+    bottom:0;
+}
+footer h2{
+    position: absolute;
+    margin-bottom: 8px;
+    left:40%;
+}

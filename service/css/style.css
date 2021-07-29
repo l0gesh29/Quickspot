@@ -1,0 +1,198 @@
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    display: flex;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width:100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.btn{
+    border: 1px solid #000000;
+    background: #1a77f0;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+}
+.btn0{
+    background: #5ba8e2;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.8s;
+}
+.btn6{
+    background: #4bf75a;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.8s;
+}
+.btn5{
+    background: #ee1f1f;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.8s;
+}
+.btn1{
+    color: #000000;
+    background-color: yellow;
+}
+.btn2{
+    color: #000000;
+    background-color: orange;
+}
+.btn3{
+    color: #000000;
+    background-color: #0081e4;
+}
+.btn1:hover,.btn2:hover{
+    color: rgb(0, 0, 0);
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.btn0::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.btn5::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.btn1::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn0::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn5::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn1:hover::before,.btn1:hover::before{
+    height: 100%;
+}
+.btn0:hover::before,.btn0:hover::before{
+    height: 100%;
+}
+.btn5:hover::before,.btn5:hover::before{
+    height: 100%;
+}
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 0 10px;
+}
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #39576e;
+    transition: .4s;
+    border-radius: 30px;
+}
+.switch input{display:none}
+
+.slider:before
+{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 20px;
+
+}
+input:checked + .slider
+{
+    background-color: #0082e6;
+}
+input:checked + .slider:before
+{
+    transform: translatex(22px);
+}
